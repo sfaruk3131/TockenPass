@@ -1,5 +1,6 @@
 public class TokenPass {
-
+    private int[] board;
+    private int currentPlayer;
     public TokenPass(int playerCount)
     {
         board = new int[playerCount];
@@ -22,5 +23,20 @@ public class TokenPass {
             board[nextPlayer]++;
             numToDistribute--;
         }
+    }
+
+    public int gameOver(int numToDistribute)
+    {
+        
+    }
+
+    public int[] printBoard()
+    {
+        return board;
+    }
+
+    public int nextPlayer()
+    {
+
     }
 }
